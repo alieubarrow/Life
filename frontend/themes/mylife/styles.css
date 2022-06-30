@@ -1,0 +1,13 @@
+@import url('./main-layout.css');
+@import url('./views/image-list-view.css');
+@import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');    html {
+      --lumo-line-height-m: 1.4;
+      --lumo-line-height-s: 1.2;
+      --lumo-line-height-xs: 1.1;
+
+    }
+
+    [theme~="dark"] {
+      --lumo-base-color: hsl(214, 90%, 3%);
+
+    }
