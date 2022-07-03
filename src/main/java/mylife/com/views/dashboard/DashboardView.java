@@ -16,13 +16,18 @@ public class DashboardView extends VerticalLayout {
 
     public DashboardView() {
         setSpacing(false);
-
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
+        
+        add(new H2("Welcome to My Homepage"));
+        add(new Paragraph("This web page presents an overview of my live."
+        		+ "I wanted to build a website and one about myself seem like a good start."
+        		+ "The main purpose of the web site is to build familiarity with the Vaadin Flow framework."
+        		+ "The goal was to build a basic page on the first attempt and then add more feautures overtime."
+        		+ "I made it straightforward and easy to naviagte so that i can have a good base to build of."
+        		+ "Thank you for your visit."));
+        
+        Image img = new Image("images/nature.png", "placeholder plant");
         img.setWidth("200px");
         add(img);
-
-        add(new H2("This place intentionally left empty"));
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
