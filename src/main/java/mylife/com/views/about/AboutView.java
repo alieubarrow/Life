@@ -19,8 +19,12 @@ public class AboutView extends VerticalLayout {
         img.setWidth("200px");
         add(img);
 
-        add(new H2("This place intentionally left empty"));
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
+        add(new H2("About"));
+        add(new Paragraph("To mention little about me, I was born in a small country called Gambia in West Africa. Around the age of 10, me and my siblings moved to Sweden where we lived "
+        		+ " for the following decade. I completed my middle school and high school in there and about a year after i graduated high shcool, "
+        		+ "i moved over to the US where i have been living since. Traveling and living in other places is one of the things i love to do the most and over the course of my life, "
+        		+ "i have visited various places. There are still a lot more places i want to go to in the near future. Beneath are just some places i have visited or lived in."));
+        
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
