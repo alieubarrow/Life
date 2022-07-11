@@ -36,32 +36,32 @@ public class AboutView extends VerticalLayout {
         SubMenu moveToSubMenu = menuBar.addItem("Move To...").getSubMenu();
 
         // Add menu items for moving the viewport to different cities
-        moveToSubMenu.addItem("Berlin", e -> {
-            Coordinate coordinate = Coordinate.fromLonLat(13.404954, 52.520008);
+        moveToSubMenu.addItem("Stockholm", e -> {
+        Coordinate coordinate = Coordinate.fromLonLat(18.063240, 59.334591);
             map.getView().setCenter(coordinate);
             map.getView().setZoom(10);
         });
 
-        moveToSubMenu.addItem("Hong Kong", e -> {
-            Coordinate coordinate = Coordinate.fromLonLat(114.162813, 22.279328);
+        moveToSubMenu.addItem("Dakar", e -> {
+            Coordinate coordinate = Coordinate.fromLonLat(-17.467686, 14.71667);
             map.getView().setCenter(coordinate);
             map.getView().setZoom(10);
         });
 
-        moveToSubMenu.addItem("Moscow", e -> {
-            Coordinate coordinate = Coordinate.fromLonLat(37.617298, 55.755825);
+        moveToSubMenu.addItem("Dallas", e -> {
+            Coordinate coordinate = Coordinate.fromLonLat(-96.808891, 32.779167);
             map.getView().setCenter(coordinate);
             map.getView().setZoom(10);
         });
 
-        moveToSubMenu.addItem("New York", e -> {
-            Coordinate coordinate = Coordinate.fromLonLat(-74.005974, 40.712776);
+        moveToSubMenu.addItem("Seattle", e -> {
+            Coordinate coordinate = Coordinate.fromLonLat(-122.335167, 47.608013);
             map.getView().setCenter(coordinate);
             map.getView().setZoom(10);
         });
 
-        moveToSubMenu.addItem("Rio de Janeiro", e -> {
-            Coordinate coordinate = Coordinate.fromLonLat(-43.2093727, -22.9110137);
+        moveToSubMenu.addItem("Copenhagen", e -> {
+            Coordinate coordinate = Coordinate.fromLonLat(12.5683377, 55.676098);
             map.getView().setCenter(coordinate);
             map.getView().setZoom(10);
         });
@@ -78,36 +78,6 @@ public class AboutView extends VerticalLayout {
         add(menuBar);
         setPadding(false);
         
-        //MapViewPort();
-     // Create a new map, this will use the OpenStreetMap service by default
-        //Map map = new Map();
-        //add(map);
-        
-        /*MenuBar menuBar = new MenuBar();
-        SubMenu moveToSubMenu = menuBar.addItem("Move To...").getSubMenu();
-
-        // Add menu items for moving the viewport to different cities
-        moveToSubMenu.addItem("Berlin", e -> {
-            Coordinate coordinate = Coordinate.fromLonLat(13.404954, 52.520008);
-            map.getView().setCenter(coordinate);
-            map.getView().setZoom(10);
-        });
-
-
-        String zoomInIcon = "+";
-		// Add menu items for zooming
-        menuBar.addItem(zoomInIcon, e -> {
-            float zoom = map.getView().getZoom();
-            map.getView().setZoom(zoom + 1);
-        });
-        String zoomOutIcon = "-";
-		menuBar.addItem(zoomOutIcon, e -> {
-            float zoom = map.getView().getZoom();
-            map.getView().setZoom(zoom - 1);
-        });*/
-        
-
-        //setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
         setDefaultHorizontalComponentAlignment(Alignment.CENTER);
         getStyle().set("text-align", "center");

@@ -20,7 +20,7 @@ public class LifestyleView extends VerticalLayout {
         add(img);
 
         add(new H2("This place intentionally left empty"));
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
+        add(new Paragraph("In progress"));
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
